@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* cursor: url(../img/sk-logo.png), auto; */
+}
+
+/* correçao de margin configurado pelo bootstrap */
+ul, h1, h2,h3,p{
+    margin-bottom: 0;
+}
+
+h3{
+    font-size: 18px;
+}
+
+/* Inicio Header */
+header{
+    height: 80px;
+    background-color: #1E1C21;
+}
+
+.container-grid{
+    width: 1200px;
+    margin: auto;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-eplayers{
+width: 280px;
+}
+
+.topo nav{
+    width: 660px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a{
+color: white;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.menu a:hover{
+    text-shadow: 0px 0px 10px white;
+    text-decoration: underline;
+}
+/* Fim Header */
+
+/* inicio banner */
+.banner{
+    height: 610px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.primeiro-banner{
+    background-image: url(../img/Banner_1_1920.jpg);
+}
+
+.primeiro-banner a{
+    background-color: #C31616;
+}
+
+.segundo-banner{
+    background-image: url(../img/Banner_2_1920.jpg);
+}
+
+.segundo-banner a{
+background-color: #001f70;
+}
+
+.terceiro-banner{
+    background-image: url(../img/Banner_3_1920.png);
+}
+
+.terceiro-banner a{
+    background-color: #c76b00;
+}
+
+.conteudo-banner{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.texto-banner{
+    color: white;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-banner h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.texto-banner p{
+    font-size: 25px;
+}
+
+.texto-banner a{
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.texto-banner a:hover{
+    text-decoration: underline;
+}
+
+/* Fim Banner */
+
+/* Inicio Jogos */
+.jogos{
+    background-color: black;
+    height: 120px;
+}
+
+.conteudo-jogos{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-jogos img{
+    max-width: 220px;
+}
+
+.conteudo-jogos a:hover img{
+    transition: 0.5s;
+transform: scale(1.5);
+}
+
+/* Fim Jogos */
+
+/* Inicio Sobre */
+.sobre{
+    height: 490px;
+    background-image: linear-gradient(rgba(0,31,112,0.7),rgba(0,31,112,0.7)), url(../img/bg-lol.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.container-faixa{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.faixa{
+    background-color: black;
+    height: 85%;
+    width: 100%;
+    transform: skewY(-3deg);
+}
+
+.conteudo-sobre{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.texto-sobre{
+    width: 525px;
+    height: 350px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-sobre h2{
+    font-size: 35px;
+}
+
+.texto-sobre p{
+font-size: 18px;
+}
+
+.conteudo-sobre img{
+    width: 510px;
+}
+/* Fim Sobre */
+
+/* Inicio Eventos */
+.eventos{
+    height: 120px;
+    background-color: black;
+    color: white;
+}
+
+.container-eventos{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-eventos h2{
+    width: 90px;
+    text-transform: uppercase;
+}
+
+.partida-eventos{
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.partida-eventos p{
+font-size: 25px;
+font-weight: bold;
+}
+
+.faixa-eventos{
+    height: 75px;
+    border: 1px solid white;
+}
+/* Fim Eventos */
+
+/* Inicio Noticias-Jogos */
+
+.noticias-jogos{
+background-color: #1E1C21;
+color: white;
+}
+
+.container-noticias-jogos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-noticias-jogos h2{
+    margin-top:30px ;
+    margin-bottom:20px ;
+}
+
+.card-noticia{
+    height: 333px;
+    width: 215px;
+    background:linear-gradient(180deg,#000000 0%, rgba(196,196,196,0)100%);
+    background: linear-gradient(rgb(100,100,100),rgb(0,0,0));
+    box-shadow: 1px 1px 20px 4px #000000;
+}
+
+.card-noticia img{
+    width: 100%;
+}
+
+.card-noticia h3{
+    margin:10px 0;
+    text-transform: uppercase;
+}
+
+.card-noticia h3, .card-noticia p{
+    margin-left: 10px;
+}
+
+.grupo-cards{
+    width: 821px;
+    height: 729px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grupo-proximos-jogos{
+    width: 237px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgb(0,0,0),rgb(100,100,100),rgb(0,0,0));
+    box-shadow: 1px 1px 20px 4px #000000;
+}
+
+.proxima-partida{
+    width: 190px;
+    text-align: center;
+}
+
+.times{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.times img{
+    height: 100%;
+}
+/* Fim Noticias-Jogos */
+
+/* Ínicio Footer */
+footer{
+    height: 250px;
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container-footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-footer{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    color: white;
+}
+
+.links h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links ul{
+    margin-left: 40px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.newsletter-midias{
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsletter{
+    height: 75px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsletter input{
+    height: 39px;
+    border: none;
+    font-size: 24px;
+}
+
+.newsletter form{
+    display: flex;
+}
+
+.newsletter input[type=email]{
+    width: 195px;
+}
+
+.newsletter input[type=email]::placeholder{
+    color: #b8b3b3;
+}
+
+.newsletter input[type=submit]{
+    width: 156px;
+    color: white;
+    background-color: #001F70;
+}
+
+.newsletter input[type=submit]{
+    cursor: pointer;
+}
+
+.midias-sociais{
+height: 50px;
+width: 355px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.midias-sociais p{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.midias-sociais a{
+    width: 50px; 
+    height:50px;
+}
+
+.midias-sociais img{
+    height: 100%;
+}
